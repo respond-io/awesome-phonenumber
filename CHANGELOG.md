@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/respond-io/awesome-phonenumber/compare/v1.3.0...v1.4.0) (2025-10-31)
+
+
+### Features
+
+* add GitHub Actions workflow for building and generating libphonenumber version updates ([0b83364](https://github.com/respond-io/awesome-phonenumber/commit/0b83364ccbfe9d1ede0b7c2990e2c910dc08432a))
+
 ## [1.3.0](https://github.com/respond-io/awesome-phonenumber/compare/v1.2.0...v1.3.0) (2025-08-13)
 
 
