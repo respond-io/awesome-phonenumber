@@ -1,5 +1,32 @@
 # Changelog
 
+## [1.4.0](https://github.com/respond-io/awesome-phonenumber/compare/v1.3.0...v1.4.0) (2025-12-03)
+
+
+### Features
+
+* add GitHub Actions workflow for building and generating libphon… ([5e6a65d](https://github.com/respond-io/awesome-phonenumber/commit/5e6a65d3af5ce04ca89729e4f3404b418d655b04))
+* add GitHub Actions workflow for building and generating libphonenumber version updates ([0b83364](https://github.com/respond-io/awesome-phonenumber/commit/0b83364ccbfe9d1ede0b7c2990e2c910dc08432a))
+* enhance build_and_generate workflow to include previous version input and update Slack notification with version details ([0500b9e](https://github.com/respond-io/awesome-phonenumber/commit/0500b9e50aa4e7a24902e0b7ebb3cc9786599b6b))
+* enhance build_and_generate workflow to include previous version… ([7788119](https://github.com/respond-io/awesome-phonenumber/commit/778811982ff4adefbbd7c7be1fd951f58b17a6c0))
+* update libphonenumber to v9.0.18 and rebuild dist files ([fea5e66](https://github.com/respond-io/awesome-phonenumber/commit/fea5e665b7d968229f2814d2937529247b8b50d6))
+* update libphonenumber to v9.0.19 and rebuild dist files ([79da9a8](https://github.com/respond-io/awesome-phonenumber/commit/79da9a8a6808f7edefe8676e23fad75535b74faa))
+
+
+### Bug Fixes
+
+* add GitHub token to fetch_latest_version workflow for version co… ([5f3de7b](https://github.com/respond-io/awesome-phonenumber/commit/5f3de7b583f36503bda46600e139be937762e532))
+* add GitHub token to fetch_latest_version workflow for version comparison ([1f3bf75](https://github.com/respond-io/awesome-phonenumber/commit/1f3bf75d2953308d1eaf9590ea7b6b3328d79911))
+* add release workflows and scripts for dev and live environments ([e5fb4b5](https://github.com/respond-io/awesome-phonenumber/commit/e5fb4b5295793823a0bf68f69ffc5a33fe31d0ea))
+* correct workflow dispatch command in fetch_latest_version.yml to specify the workflow file ([4b52a07](https://github.com/respond-io/awesome-phonenumber/commit/4b52a07409bcb90cf3666876f35f5739fe726adf))
+* correct workflow dispatch command in fetch_latest_version.yml to… ([5079e2b](https://github.com/respond-io/awesome-phonenumber/commit/5079e2bae9997cd224cf644f5921ceffce6aedf4))
+* specify webhook type in Slack notification action for improved i… ([27a570b](https://github.com/respond-io/awesome-phonenumber/commit/27a570b61b8e850f19c8099a2d0fe9c745c84b8d))
+* specify webhook type in Slack notification action for improved integration ([8db2389](https://github.com/respond-io/awesome-phonenumber/commit/8db2389e1d5516556f0df44f0d00b80c1a842c9d))
+* update fetch_latest_version workflow to log message after dispatching build_and_generate workflow ([e44c7fe](https://github.com/respond-io/awesome-phonenumber/commit/e44c7fea947673e0014108845cebd441d4f74eb7))
+* update GitHub Actions workflow to use the correct flag for versi… ([1ad323b](https://github.com/respond-io/awesome-phonenumber/commit/1ad323b3a8a9a4bf2ddfc1d92ff3342a83d705de))
+* update GitHub Actions workflow to use the correct flag for version input in build_and_generate dispatch ([020a709](https://github.com/respond-io/awesome-phonenumber/commit/020a7095c69001606f5e55514d61917dee85a7f9))
+* update Slack notification workflow to use correct pull request URL and adjust message formatting ([41ba85e](https://github.com/respond-io/awesome-phonenumber/commit/41ba85e8517ad3e42af34e7745dd0ad7501e6a20))
+
 ## [1.7.0](https://github.com/respond-io/awesome-phonenumber/compare/v1.6.0...v1.7.0) (2025-11-24)
 
 
