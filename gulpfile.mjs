@@ -17,7 +17,7 @@ const closureLinterUrl = 'https://github.com/google/closure-linter';
 const pythonGflagsUrl = 'https://github.com/google/python-gflags.git';
 const antName = 'apache-ant-1.10.15';
 const antTar = `${antName}.tar.gz`;
-const antUrl = `https://downloads.apache.org/ant/binaries/${antName}-bin.tar.gz`;
+const antUrl = `https://archive.apache.org/dist/ant/binaries/${antName}-bin.tar.gz`;
 
 const isDebug = process.env.DEBUG && process.env.DEBUG !== '0';
 
