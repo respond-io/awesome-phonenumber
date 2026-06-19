@@ -44,7 +44,7 @@ jobs:
         run: yarn build
       - name: Create Pull Request
         id: create-pr
-        uses: peter-evans/create-pull-request@v5
+        uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: 'feat: update libphonenumber to ${{ inputs.version_number }} and rebuild dist files'
