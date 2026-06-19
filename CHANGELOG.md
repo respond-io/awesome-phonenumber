@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.15.0](https://github.com/respond-io/awesome-phonenumber/compare/v1.14.0...v1.15.0) (2026-06-19)
+
+
+### Features
+
+* update libphonenumber to v9.0.32 and rebuild dist files ([84b8dc5](https://github.com/respond-io/awesome-phonenumber/commit/84b8dc5f12dee078502d58bbb33912f06cd05351))
+
+
+### Bug Fixes
+
+* add sign-commits: true to create-pull-request step ([1189bb3](https://github.com/respond-io/awesome-phonenumber/commit/1189bb3e4cb85625bb31d5bd157f73e92c5fccba))
+* add sign-commits: true to create-pull-request step ([a3c15e5](https://github.com/respond-io/awesome-phonenumber/commit/a3c15e5bb0425650bbc57053c95cf4fd1c842363))
+* bump create-pull-request to v7 for signed commit support ([e593a18](https://github.com/respond-io/awesome-phonenumber/commit/e593a184c7efea5b692bdbc971366b03a9de77b9))
+* bump create-pull-request to v7 for signed commit support ([8833490](https://github.com/respond-io/awesome-phonenumber/commit/8833490fa88644a6ba4c28804cfa2846f410e5d2))
+* use archive.apache.org for Apache Ant download ([373435c](https://github.com/respond-io/awesome-phonenumber/commit/373435c09f16e688b9354649419c53276a92735c))
+* use archive.apache.org for Apache Ant download ([ede6786](https://github.com/respond-io/awesome-phonenumber/commit/ede6786e75d1bdd21e8a9f6ec9b92ddd3388e596))
+
 ## [1.14.0](https://github.com/respond-io/awesome-phonenumber/compare/v1.13.0...v1.14.0) (2026-03-17)
 
 
