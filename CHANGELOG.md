@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.14.1](https://github.com/respond-io/awesome-phonenumber/compare/v1.14.0...v1.14.1) (2026-06-19)
+
+
+### Bug Fixes
+
+* use archive.apache.org for Apache Ant download ([373435c](https://github.com/respond-io/awesome-phonenumber/commit/373435c09f16e688b9354649419c53276a92735c))
+* use archive.apache.org for Apache Ant download ([ede6786](https://github.com/respond-io/awesome-phonenumber/commit/ede6786e75d1bdd21e8a9f6ec9b92ddd3388e596))
+
 ## [1.14.0](https://github.com/respond-io/awesome-phonenumber/compare/v1.13.0...v1.14.0) (2026-03-17)
 
 
