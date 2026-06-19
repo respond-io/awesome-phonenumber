@@ -58,6 +58,7 @@ jobs:
           branch: feature/update-libphonenumber-${{ inputs.version_number }}
           delete-branch: true
           base: master
+          sign-commits: true
       - name: Set PR URL output & Slack notification
         id: set-pr-url
         uses: ./.github/workflows/composite/slack_notification
