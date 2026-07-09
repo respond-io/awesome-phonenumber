@@ -4,7 +4,6 @@ import child from 'child_process'
 import fs from 'fs'
 import rimraf from 'rmfr'
 import { mkdirp } from 'mkdirp'
-import replace from 'replace'
 
 
 const libphonenumberVersion =
@@ -80,12 +79,13 @@ gulp.task( 'default', gulp.series( 'clean', 'build', 'update-readme' ) );
 
 async function updateReadme( )
 {
-	replace( {
-		regex: 'Uses libphonenumber ([A-Za-z.0-9]+)',
-		replacement: `Uses libphonenumber ${libphonenumberVersion}`,
-		paths: [ 'README.md' ],
-		silent: true,
-	} );
+	const readmePath = 'README.md';
+	const readme = fs.readFileSync( readmePath, 'utf8' );
+	const updated = readme.replace(
+		/Uses libphonenumber ([A-Za-z.0-9]+)/,
+		`Uses libphonenumber ${libphonenumberVersion}`
+	);
+	fs.writeFileSync( readmePath, updated );
 }
 
 function gitClone( url, name, branch )
