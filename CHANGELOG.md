@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.15.1](https://github.com/respond-io/awesome-phonenumber/compare/v1.15.0...v1.15.1) (2026-07-09)
+
+
+### Bug Fixes
+
+* **deps:** drop replace devDependency to close minimatch ReDoS alert ([16bb567](https://github.com/respond-io/awesome-phonenumber/commit/16bb56774838ebb66eb15d0b42ac2ed2e87f405e))
+* **deps:** resolve Dependabot security alerts ([b83a636](https://github.com/respond-io/awesome-phonenumber/commit/b83a63639ca598506ede8aa9ce3c4126a3e8a22b))
+* **deps:** resolve Dependabot security alerts in yarn.lock ([245ecf2](https://github.com/respond-io/awesome-phonenumber/commit/245ecf251e1d039ccf0385aa49860e10454ea4b9))
+
 ## [1.15.0](https://github.com/respond-io/awesome-phonenumber/compare/v1.14.0...v1.15.0) (2026-06-19)
 
 
