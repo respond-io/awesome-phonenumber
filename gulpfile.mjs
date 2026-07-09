@@ -79,6 +79,7 @@ gulp.task( 'default', gulp.series( 'clean', 'build', 'update-readme' ) );
 
 async function updateReadme( )
 {
+	// Uses plain fs instead of the `replace` package, which pinned a vulnerable minimatch version.
 	const readmePath = 'README.md';
 	const readme = fs.readFileSync( readmePath, 'utf8' );
 	const updated = readme.replace(
