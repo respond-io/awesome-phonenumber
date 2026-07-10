@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.2](https://github.com/respond-io/awesome-phonenumber/compare/v1.15.1...v1.15.2) (2026-07-10)
+
+
+### Bug Fixes
+
+* document why updateReadme uses fs instead of replace package ([6f1c249](https://github.com/respond-io/awesome-phonenumber/commit/6f1c249333f5ed120420482fab68d920954dcd67))
+
 ## [1.15.1](https://github.com/respond-io/awesome-phonenumber/compare/v1.15.0...v1.15.1) (2026-07-09)
 
 
