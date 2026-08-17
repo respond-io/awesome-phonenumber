@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.17.0](https://github.com/respond-io/awesome-phonenumber/compare/v1.16.0...v1.17.0) (2026-08-17)
+
+
+### Features
+
+* update libphonenumber to v9.0.37 and rebuild dist files ([cdeba56](https://github.com/respond-io/awesome-phonenumber/commit/cdeba56fa790eef3d5898e0595702c43c16e0064))
+
+
+### Bug Fixes
+
+* **deps:** bump transitive js-yaml 3.15.0 -&gt; 3.15.1 (GHSA-5p4m-2wfm-xmqj) ([1506114](https://github.com/respond-io/awesome-phonenumber/commit/15061147df7965365d8670a4a5d2e4e71b00ec40))
+* **deps:** bump transitive js-yaml 4.3.0 -&gt; 4.3.1 (GHSA-5p4m-2wfm-xmqj) ([485ac1b](https://github.com/respond-io/awesome-phonenumber/commit/485ac1b3206c3247609e3452046a7ddfb8d444c9))
+* **deps:** bump transitive js-yaml 4.3.0 -&gt; 4.3.1 (GHSA-5p4m-2wfm-xmqj) ([e194ef6](https://github.com/respond-io/awesome-phonenumber/commit/e194ef6f6ff0603473188efaada20a1f6b6e8c6d))
+* **deps:** resolve dependency vulnerabilities (07 Aug 2026) ([34ddadb](https://github.com/respond-io/awesome-phonenumber/commit/34ddadb313eee7a4ea6f60e016053e2a97110d1a))
+
 ## [1.16.0](https://github.com/respond-io/awesome-phonenumber/compare/v1.15.2...v1.16.0) (2026-08-03)
 
 
