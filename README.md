@@ -20,7 +20,7 @@ Unlike libphonenumber, it includes a `findNumbers( )` function to find phone num
 
 TypeScript typings are provided within the package.
 
-Uses libphonenumber v9.0.38
+Uses libphonenumber v9.0.39
 
 ### Versions
 
