@@ -1,0 +1,55 @@
+name: Socket Reachability Scan
+
+# The caller owns triggers, concurrency, permissions, and secret mapping. The
+# shared workflow owns the proven full-repository reachability implementation.
+#
+# This repository is public and the shared workflow runs on the self-hosted
+# security runner, so it keeps only scheduled and manual triggers. Never add a
+# pull_request trigger: that would let fork pull requests run code on the
+# self-hosted runner with the secrets below in scope.
+
+on:
+  # Daily at 16:40 UTC (00:40 MYT). This slot runs ahead of the package repos
+  # that start at 17:00 UTC, keeping the existing 20-minute stagger so it does
+  # not contend for the self-hosted runner, and files the scan well before the
+  # 02:00 UTC socket-linear-sync run.
+  schedule:
+    - cron: '40 16 * * *'
+  # On-demand runs: pick your branch in the "Run workflow" dropdown and leave
+  # base-branch empty to scan it, or type an explicit branch to override.
+  workflow_dispatch:
+    inputs:
+      base-branch:
+        description: Branch to check out, scan, and associate with the Socket
+          report. Empty scans the branch selected above.
+        type: string
+        default: ''
+
+concurrency:
+  group: socket-reachability-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  reachability-scan:
+    name: Socket Full Application Reachability
+    # Pinned to the v1.6.3 release tag.
+    # https://github.com/respond-io/shared-github-actions/releases/tag/v1.6.3
+    uses: respond-io/shared-github-actions/.github/workflows/socket-reachability.yml@v1.6.3
+    with:
+      base-branch: ${{ inputs.base-branch || github.ref_name }}
+      # Keep the report available when Coana cannot install a dependency on a
+      # vulnerability path. Affected CVEs remain analysis errors rather than
+      # being marked unreachable, and failures stay visible in the job log.
+      reach-continue-on-install-errors: true
+    secrets:
+      SOCKET_REACHABILITY_API_TOKEN: ${{ secrets.SOCKET_REACHABILITY_API_TOKEN }}
+      # GH_PACKAGE_ACCESS_TOKEN is deliberately not passed: this package has no
+      # private @respond-io dependencies, and a public repository should hold
+      # no more credentials than the scan needs.
+      DEVOPS_SLACK_BOT_TOKEN: ${{ secrets.DEVOPS_SLACK_BOT_TOKEN }}
+      # The channel ID is repository-level; the credentials above are provided
+      # at organization level.
+      SOCKET_SCAN_CHANNEL_ID: ${{ secrets.SOCKET_SCAN_CHANNEL_ID }}
