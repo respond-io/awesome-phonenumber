@@ -1,0 +1,25 @@
+version: 2
+updates:
+  # yarn (berry) uses the npm ecosystem
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 6
+    groups:
+      npm-minor-patch:
+        update-types:
+          - minor
+          - patch
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 6
+    groups:
+      github-actions:
+        patterns:
+          - '*'
