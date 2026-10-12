@@ -44,8 +44,9 @@
     "test"
   ],
   "workspaces": [
-    "cjs-test",
-    "esm-test"
+    "@respond-io/webpack",
+    "@respond-io/cjs-test",
+    "@respond-io/esm-test"
   ],
   "files": [
     "lib",
