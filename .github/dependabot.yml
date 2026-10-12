@@ -1,17 +1,23 @@
 version: 2
+
 updates:
-  # yarn (berry) uses the npm ecosystem
+  # yarn uses the npm ecosystem
   - package-ecosystem: npm
     directory: /
     schedule:
-      interval: weekly
-    cooldown:
-      default-days: 6
+      interval: daily
+    # Security PRs only: no routine version bumps. Security PRs are not
+    # subject to this limit.
+    open-pull-requests-limit: 0
+    labels:
+      - dependencies
+    # No target-branch: setting it (even to master) stops these options
+    # from applying to security PRs, so they would no longer be grouped.
     groups:
-      npm-minor-patch:
-        update-types:
-          - minor
-          - patch
+      security-updates:
+        applies-to: security-updates
+        patterns:
+          - '*'
 
   - package-ecosystem: github-actions
     directory: /
@@ -19,7 +25,13 @@ updates:
       interval: weekly
     cooldown:
       default-days: 6
+    labels:
+      - dependencies
     groups:
-      github-actions:
+      actions-all:
+        update-types:
+          - major
+          - minor
+          - patch
         patterns:
           - '*'
