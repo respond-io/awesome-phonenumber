@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.21.0](https://github.com/respond-io/awesome-phonenumber/compare/v1.20.0...v1.21.0) (2026-10-12)
+
+
+### Features
+
+* update libphonenumber to v9.0.41 and rebuild dist files ([0e05cb5](https://github.com/respond-io/awesome-phonenumber/commit/0e05cb55628bee6bb4f4aef3212ee4349404e30a))
+
 ## [1.20.0](https://github.com/respond-io/awesome-phonenumber/compare/v1.19.0...v1.20.0) (2026-09-28)
 
 
