@@ -21,6 +21,9 @@ jobs:
 
   socket-firewall-scan:
     name: Socket Firewall Scan
-    if: github.event_name == 'pull_request'
-    uses: respond-io/shared-github-actions/.github/workflows/socket-firewall-scan.yml@v1.2.0
+    # Limit SFW to release branches without changing PolinRider coverage.
+    if: >-
+      github.event_name == 'pull_request' &&
+      (github.base_ref == 'dev' || github.base_ref == 'master' || startsWith(github.base_ref, 'flight/'))
+    uses: respond-io/shared-github-actions/.github/workflows/socket-firewall-scan.yml@7e144f1d81d4b81a69a8afbc54ad7df6f7eebb2f # v1.12.2
     secrets: inherit
