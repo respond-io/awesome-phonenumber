@@ -44,9 +44,9 @@
     "test"
   ],
   "workspaces": [
-    "@respond-io/webpack",
-    "@respond-io/cjs-test",
-    "@respond-io/esm-test"
+    "webpack",
+    "cjs-test",
+    "esm-test"
   ],
   "files": [
     "lib",
@@ -94,5 +94,5 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "packageManager": "yarn@3.2.4"
+  "packageManager": "yarn@4.18.1"
 }

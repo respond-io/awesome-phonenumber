@@ -18,7 +18,7 @@
     "@babel/preset-env": "^7.25.4",
     "@babel/preset-typescript": "^7.24.7",
     "@types/jest": "^29.5.13",
-    "awesome-phonenumber": "workspace:^",
+    "awesome-phonenumber": "portal:..",
     "jest": "^29.7.0",
     "ts-jest": "^29.2.5",
     "ts-jest-resolver": "^2.0.1",
