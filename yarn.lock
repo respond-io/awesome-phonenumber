@@ -2084,6 +2084,13 @@ __metadata:
     ts-jest-resolver: "npm:^2.0.1"
     ts-node: "npm:^10.9.2"
     typescript: "npm:^5.9.3"
+  dependenciesMeta:
+    pre-commit:
+      built: true
+    puppeteer:
+      built: true
+    spawn-sync:
+      built: true
   languageName: unknown
   linkType: soft
 
@@ -2985,18 +2992,39 @@ __metadata:
 "awesome-phonenumber@portal:..::locator=%40respond-io%2Fawesome-phonenumber-cjs-test%40workspace%3Acjs-test":
   version: 0.0.0-use.local
   resolution: "awesome-phonenumber@portal:..::locator=%40respond-io%2Fawesome-phonenumber-cjs-test%40workspace%3Acjs-test"
+  dependenciesMeta:
+    pre-commit:
+      built: true
+    puppeteer:
+      built: true
+    spawn-sync:
+      built: true
   languageName: node
   linkType: soft
 
 "awesome-phonenumber@portal:..::locator=%40respond-io%2Fawesome-phonenumber-esm-test%40workspace%3Aesm-test":
   version: 0.0.0-use.local
   resolution: "awesome-phonenumber@portal:..::locator=%40respond-io%2Fawesome-phonenumber-esm-test%40workspace%3Aesm-test"
+  dependenciesMeta:
+    pre-commit:
+      built: true
+    puppeteer:
+      built: true
+    spawn-sync:
+      built: true
   languageName: node
   linkType: soft
 
 "awesome-phonenumber@portal:..::locator=%40respond-io%2Fawesome-phoneumber-webpack-test%40workspace%3Awebpack":
   version: 0.0.0-use.local
   resolution: "awesome-phonenumber@portal:..::locator=%40respond-io%2Fawesome-phoneumber-webpack-test%40workspace%3Awebpack"
+  dependenciesMeta:
+    pre-commit:
+      built: true
+    puppeteer:
+      built: true
+    spawn-sync:
+      built: true
   languageName: node
   linkType: soft
 

@@ -89,6 +89,17 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   },
+  "dependenciesMeta": {
+    "pre-commit": {
+      "built": true
+    },
+    "puppeteer": {
+      "built": true
+    },
+    "spawn-sync": {
+      "built": true
+    }
+  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
