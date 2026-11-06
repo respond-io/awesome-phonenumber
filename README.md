@@ -12,6 +12,12 @@ Run the build command from `package.json`, add any tests in `test.in/awesome-pho
 Run the test command from `package.json`, validate that the tests are running as expected
 Open a PR to master, with the changes
 
+# Dev releases
+
+Merging a `feat:` or `fix:` PR into `dev` opens a release PR. Merge it to publish `<next version>-dev.N` under the `next` npm tag, e.g. `1.23.0-dev.0`. Pin the exact version when testing it in another repo.
+
+When master releases a new version, copy the version from `.github/.release-please-live-manifest.json` into `.github/.release-please-dev-manifest.json` during the next master → dev sync. Dev builds then restart from the next version, e.g. `1.24.0-dev.0`.
+
 # Awesome phonenumber parser
 
 This library is a pre-compiled version of Google's `libphonenumber`, with a slightly simpler interface. It has a minimal footprint - is by far the smallest libphonenumber-based library available on npmjs, and has no dependencies.
@@ -20,7 +26,7 @@ Unlike libphonenumber, it includes a `findNumbers( )` function to find phone num
 
 TypeScript typings are provided within the package.
 
-Uses libphonenumber v9.0.26
+Uses libphonenumber v9.0.42
 
 ### Versions
 
