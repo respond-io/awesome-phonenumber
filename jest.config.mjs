@@ -6,9 +6,9 @@ export default {
 		'<rootDir>/test/**/*.js',
 	],
 	moduleNameMapper: {
-		"awesome-phonenumber": "<rootDir>/index.js",
+		"^@respond-io/awesome-phonenumber$": "<rootDir>/index.js",
 	},
-	modulePathIgnorePatterns: [],
+	modulePathIgnorePatterns: [ "<rootDir>/dist/" ],
 	collectCoverage: false,
 	extensionsToTreatAsEsm: ['.ts'],
 }

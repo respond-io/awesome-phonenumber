@@ -1,4 +1,4 @@
-import { parsePhoneNumber } from 'awesome-phonenumber'
+import { parsePhoneNumber } from '@respond-io/awesome-phonenumber'
 
 const div = document.createElement( 'div' );
 div.id = 'rootdiv';
