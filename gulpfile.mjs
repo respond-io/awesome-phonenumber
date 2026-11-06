@@ -4,7 +4,6 @@ import child from 'child_process'
 import fs from 'fs'
 import rimraf from 'rmfr'
 import { mkdirp } from 'mkdirp'
-import replace from 'replace'
 
 
 const libphonenumberVersion =
@@ -17,7 +16,7 @@ const closureLinterUrl = 'https://github.com/google/closure-linter';
 const pythonGflagsUrl = 'https://github.com/google/python-gflags.git';
 const antName = 'apache-ant-1.10.15';
 const antTar = `${antName}.tar.gz`;
-const antUrl = `https://downloads.apache.org/ant/binaries/${antName}-bin.tar.gz`;
+const antUrl = `https://archive.apache.org/dist/ant/binaries/${antName}-bin.tar.gz`;
 
 const isDebug = process.env.DEBUG && process.env.DEBUG !== '0';
 
@@ -80,12 +79,14 @@ gulp.task( 'default', gulp.series( 'clean', 'build', 'update-readme' ) );
 
 async function updateReadme( )
 {
-	replace( {
-		regex: 'Uses libphonenumber ([A-Za-z.0-9]+)',
-		replacement: `Uses libphonenumber ${libphonenumberVersion}`,
-		paths: [ 'README.md' ],
-		silent: true,
-	} );
+	// Uses plain fs instead of the `replace` package, which pinned a vulnerable minimatch version.
+	const readmePath = 'README.md';
+	const readme = fs.readFileSync( readmePath, 'utf8' );
+	const updated = readme.replace(
+		/Uses libphonenumber ([A-Za-z.0-9]+)/,
+		`Uses libphonenumber ${libphonenumberVersion}`
+	);
+	fs.writeFileSync( readmePath, updated );
 }
 
 function gitClone( url, name, branch )

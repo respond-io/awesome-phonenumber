@@ -2,7 +2,7 @@
   "name": "@respond-io/awesome-phonenumber",
   "description": "Google's libphonenumber pre-compiled with the closure compiler",
   "license": "MIT",
-  "version": "0.3.0",
+  "version": "1.22.0",
   "author": "Gustaf Räntilä <g.rantila@gmail.com>",
   "repository": {
     "type": "git",
@@ -83,9 +83,8 @@
     "jest": "^29.7.0",
     "mkdirp": "^3.0.1",
     "pre-commit": "^1.2.2",
-    "replace": "^1.2.2",
     "rmfr": "^2.0.0",
-    "rollup": "4.23.0",
+    "rollup": "4.62.2",
     "ts-jest-resolver": "^2.0.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.6.2"

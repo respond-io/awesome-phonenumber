@@ -1,5 +1,95 @@
 # Changelog
 
+## [1.22.0](https://github.com/respond-io/awesome-phonenumber/compare/v1.21.0...v1.22.0) (2026-11-02)
+
+
+### Features
+
+* update libphonenumber to v9.0.42 and rebuild dist files ([12062d3](https://github.com/respond-io/awesome-phonenumber/commit/12062d3d93de35c4bcdc26b7b67f483605f0d0e5))
+
+## [1.21.0](https://github.com/respond-io/awesome-phonenumber/compare/v1.20.0...v1.21.0) (2026-10-12)
+
+
+### Features
+
+* update libphonenumber to v9.0.41 and rebuild dist files ([0e05cb5](https://github.com/respond-io/awesome-phonenumber/commit/0e05cb55628bee6bb4f4aef3212ee4349404e30a))
+
+## [1.20.0](https://github.com/respond-io/awesome-phonenumber/compare/v1.19.0...v1.20.0) (2026-09-28)
+
+
+### Features
+
+* update libphonenumber to v9.0.40 and rebuild dist files ([f1e1f89](https://github.com/respond-io/awesome-phonenumber/commit/f1e1f89c202fd3949b653e9852072ecbd95ce99e))
+
+## [1.19.0](https://github.com/respond-io/awesome-phonenumber/compare/v1.18.0...v1.19.0) (2026-09-14)
+
+
+### Features
+
+* update libphonenumber to v9.0.39 and rebuild dist files ([d42b2bb](https://github.com/respond-io/awesome-phonenumber/commit/d42b2bb2f98eb9829c3d648b5fad11c1b7911252))
+
+## [1.18.0](https://github.com/respond-io/awesome-phonenumber/compare/v1.17.0...v1.18.0) (2026-09-01)
+
+
+### Features
+
+* update libphonenumber to v9.0.38 and rebuild dist files ([f370e20](https://github.com/respond-io/awesome-phonenumber/commit/f370e20d621d1a8f31f14d858ef923da66e3bb52))
+
+## [1.17.0](https://github.com/respond-io/awesome-phonenumber/compare/v1.16.0...v1.17.0) (2026-08-17)
+
+
+### Features
+
+* update libphonenumber to v9.0.37 and rebuild dist files ([cdeba56](https://github.com/respond-io/awesome-phonenumber/commit/cdeba56fa790eef3d5898e0595702c43c16e0064))
+
+
+### Bug Fixes
+
+* **deps:** bump transitive js-yaml 3.15.0 -&gt; 3.15.1 (GHSA-5p4m-2wfm-xmqj) ([1506114](https://github.com/respond-io/awesome-phonenumber/commit/15061147df7965365d8670a4a5d2e4e71b00ec40))
+* **deps:** bump transitive js-yaml 4.3.0 -&gt; 4.3.1 (GHSA-5p4m-2wfm-xmqj) ([485ac1b](https://github.com/respond-io/awesome-phonenumber/commit/485ac1b3206c3247609e3452046a7ddfb8d444c9))
+* **deps:** bump transitive js-yaml 4.3.0 -&gt; 4.3.1 (GHSA-5p4m-2wfm-xmqj) ([e194ef6](https://github.com/respond-io/awesome-phonenumber/commit/e194ef6f6ff0603473188efaada20a1f6b6e8c6d))
+* **deps:** resolve dependency vulnerabilities (07 Aug 2026) ([34ddadb](https://github.com/respond-io/awesome-phonenumber/commit/34ddadb313eee7a4ea6f60e016053e2a97110d1a))
+
+## [1.16.0](https://github.com/respond-io/awesome-phonenumber/compare/v1.15.2...v1.16.0) (2026-08-03)
+
+
+### Features
+
+* update libphonenumber to v9.0.36 and rebuild dist files ([feae3af](https://github.com/respond-io/awesome-phonenumber/commit/feae3af6a89f013bdae3e2b584d05bdd9b22817a))
+
+## [1.15.2](https://github.com/respond-io/awesome-phonenumber/compare/v1.15.1...v1.15.2) (2026-07-10)
+
+
+### Bug Fixes
+
+* document why updateReadme uses fs instead of replace package ([6f1c249](https://github.com/respond-io/awesome-phonenumber/commit/6f1c249333f5ed120420482fab68d920954dcd67))
+
+## [1.15.1](https://github.com/respond-io/awesome-phonenumber/compare/v1.15.0...v1.15.1) (2026-07-09)
+
+
+### Bug Fixes
+
+* **deps:** drop replace devDependency to close minimatch ReDoS alert ([16bb567](https://github.com/respond-io/awesome-phonenumber/commit/16bb56774838ebb66eb15d0b42ac2ed2e87f405e))
+* **deps:** resolve Dependabot security alerts ([b83a636](https://github.com/respond-io/awesome-phonenumber/commit/b83a63639ca598506ede8aa9ce3c4126a3e8a22b))
+* **deps:** resolve Dependabot security alerts in yarn.lock ([245ecf2](https://github.com/respond-io/awesome-phonenumber/commit/245ecf251e1d039ccf0385aa49860e10454ea4b9))
+
+## [1.15.0](https://github.com/respond-io/awesome-phonenumber/compare/v1.14.0...v1.15.0) (2026-06-19)
+
+
+### Features
+
+* update libphonenumber to v9.0.32 and rebuild dist files ([84b8dc5](https://github.com/respond-io/awesome-phonenumber/commit/84b8dc5f12dee078502d58bbb33912f06cd05351))
+
+
+### Bug Fixes
+
+* add sign-commits: true to create-pull-request step ([1189bb3](https://github.com/respond-io/awesome-phonenumber/commit/1189bb3e4cb85625bb31d5bd157f73e92c5fccba))
+* add sign-commits: true to create-pull-request step ([a3c15e5](https://github.com/respond-io/awesome-phonenumber/commit/a3c15e5bb0425650bbc57053c95cf4fd1c842363))
+* bump create-pull-request to v7 for signed commit support ([e593a18](https://github.com/respond-io/awesome-phonenumber/commit/e593a184c7efea5b692bdbc971366b03a9de77b9))
+* bump create-pull-request to v7 for signed commit support ([8833490](https://github.com/respond-io/awesome-phonenumber/commit/8833490fa88644a6ba4c28804cfa2846f410e5d2))
+* use archive.apache.org for Apache Ant download ([373435c](https://github.com/respond-io/awesome-phonenumber/commit/373435c09f16e688b9354649419c53276a92735c))
+* use archive.apache.org for Apache Ant download ([ede6786](https://github.com/respond-io/awesome-phonenumber/commit/ede6786e75d1bdd21e8a9f6ec9b92ddd3388e596))
+
 ## [1.14.0](https://github.com/respond-io/awesome-phonenumber/compare/v1.13.0...v1.14.0) (2026-03-17)
 
 
