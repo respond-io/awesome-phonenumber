@@ -20,6 +20,7 @@ jobs:
           - 18.x
           - 20.x
           - 22.x
+          - 24.x
     steps:
     - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
@@ -33,6 +34,7 @@ jobs:
         CI: true
     - run: yarn build
       working-directory: ./webpack
+    - run: 'echo 0 | sudo tee /proc/sys/kernel/apparmor_restrict_unprivileged_userns'
     - run: yarn test
       working-directory: ./webpack
     - run: yarn build

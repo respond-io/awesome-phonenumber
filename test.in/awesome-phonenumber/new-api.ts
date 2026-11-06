@@ -8,7 +8,7 @@ import PhoneNumberClass, {
 	getSupportedCallingCodes,
 	getNumberFrom,
 	findNumbers,
-} from 'awesome-phonenumber';
+} from '@respond-io/awesome-phonenumber';
 
 
 
@@ -489,5 +489,25 @@ describe( 'getNumberFrom', ( ) =>
 		const clone = JSON.parse( JSON.stringify( pn ) ) ;
 		const fromJp = getNumberFrom( clone, 'JP' );
 		expect( fromJp.number ).toBe( '010 46 70 765 43 21' );
+	} );
+} );
+
+describe( 'result shape', ( ) =>
+{
+	it.each( [
+		[ '+60123456789', undefined ],
+		[ '0123456789', 'MY' ],
+		[ '+6012', 'MY' ],
+		[ '+60', 'MY' ],
+		[ '', 'MY' ],
+		[ 'abc', 'MY' ],
+	] )( 'keeps a plain object with number.input for %p', ( input, regionCode ) =>
+	{
+		const res = parsePhoneNumber( input, regionCode ? { regionCode } : undefined );
+
+		expect( Object.isExtensible( res ) ).toBe( true );
+		expect( Object.getOwnPropertyDescriptor( res, 'number' ) )
+			.toMatchObject( { writable: true, configurable: true } );
+		expect( res.number?.input ).toBe( input );
 	} );
 } );
