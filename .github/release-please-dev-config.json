@@ -2,7 +2,7 @@
     "release-type": "node",
     "prerelease": true,
     "versioning": "prerelease",
-    "prerelease-type": "dev",
+    "prerelease-type": "dev.0",
     "include-component-in-tag": false,
     "packages": {
       ".": {

@@ -14,9 +14,9 @@ Open a PR to master, with the changes
 
 # Dev releases
 
-Merging a `feat:` or `fix:` PR into `dev` opens a release PR. Merge it to publish `<next version>-dev.N` under the `next` npm tag, e.g. `1.23.0-dev.1`. Pin the exact version when testing it in another repo.
+Merging a `feat:` or `fix:` PR into `dev` opens a release PR. Merge it to publish `<next version>-dev.N` under the `next` npm tag, e.g. `1.23.0-dev.0`. Pin the exact version when testing it in another repo.
 
-When master releases a new version, copy the version from `.github/.release-please-live-manifest.json` into `.github/.release-please-dev-manifest.json` during the next master → dev sync. Dev builds then restart from the next version, e.g. `1.24.0-dev`.
+When master releases a new version, copy the version from `.github/.release-please-live-manifest.json` into `.github/.release-please-dev-manifest.json` during the next master → dev sync. Dev builds then restart from the next version, e.g. `1.24.0-dev.0`.
 
 # Awesome phonenumber parser
 
