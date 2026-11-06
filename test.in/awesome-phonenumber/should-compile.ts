@@ -6,7 +6,7 @@ import {
 	getSupportedCallingCodes,
 	getSupportedRegionCodes,
 	getAsYouType,
-} from 'awesome-phonenumber';
+} from '@respond-io/awesome-phonenumber';
 
 
 const failureResult = ( msg: string ) =>

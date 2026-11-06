@@ -2036,8 +2036,8 @@ __metadata:
   dependencies:
     "@babel/preset-env": "npm:^7.29.7"
     "@babel/preset-typescript": "npm:^7.29.7"
+    "@respond-io/awesome-phonenumber": "workspace:*"
     "@types/jest": "npm:^29.5.14"
-    awesome-phonenumber: "portal:.."
     jest: "npm:^29.7.0"
     ts-jest: "npm:^29.4.15"
     ts-jest-resolver: "npm:^2.0.1"
@@ -2052,8 +2052,8 @@ __metadata:
   dependencies:
     "@babel/preset-env": "npm:^7.29.7"
     "@babel/preset-typescript": "npm:^7.29.7"
+    "@respond-io/awesome-phonenumber": "workspace:*"
     "@types/jest": "npm:^29.5.14"
-    awesome-phonenumber: "portal:.."
     jest: "npm:^29.7.0"
     ts-jest-resolver: "npm:^2.0.1"
     ts-node: "npm:^10.9.2"
@@ -2061,7 +2061,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@respond-io/awesome-phonenumber@workspace:.":
+"@respond-io/awesome-phonenumber@workspace:*, @respond-io/awesome-phonenumber@workspace:.":
   version: 0.0.0-use.local
   resolution: "@respond-io/awesome-phonenumber@workspace:."
   dependencies:
@@ -2098,7 +2098,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@respond-io/awesome-phoneumber-webpack-test@workspace:webpack"
   dependencies:
-    awesome-phonenumber: "portal:.."
+    "@respond-io/awesome-phonenumber": "workspace:*"
     html-webpack-plugin: "npm:^5.6.8"
     puppeteer: "npm:^23.11.1"
     webpack: "npm:^5.112.2"
@@ -2988,45 +2988,6 @@ __metadata:
   checksum: 10/463e2f8e43384f1afb54bc68485c436d7622acec08b6fad269b421cb1d29cebb5af751426793d0961ed243146fe4dc983402f6d5a51b720b277818dbf6f2e49e
   languageName: node
   linkType: hard
-
-"awesome-phonenumber@portal:..::locator=%40respond-io%2Fawesome-phonenumber-cjs-test%40workspace%3Acjs-test":
-  version: 0.0.0-use.local
-  resolution: "awesome-phonenumber@portal:..::locator=%40respond-io%2Fawesome-phonenumber-cjs-test%40workspace%3Acjs-test"
-  dependenciesMeta:
-    pre-commit:
-      built: true
-    puppeteer:
-      built: true
-    spawn-sync:
-      built: true
-  languageName: node
-  linkType: soft
-
-"awesome-phonenumber@portal:..::locator=%40respond-io%2Fawesome-phonenumber-esm-test%40workspace%3Aesm-test":
-  version: 0.0.0-use.local
-  resolution: "awesome-phonenumber@portal:..::locator=%40respond-io%2Fawesome-phonenumber-esm-test%40workspace%3Aesm-test"
-  dependenciesMeta:
-    pre-commit:
-      built: true
-    puppeteer:
-      built: true
-    spawn-sync:
-      built: true
-  languageName: node
-  linkType: soft
-
-"awesome-phonenumber@portal:..::locator=%40respond-io%2Fawesome-phoneumber-webpack-test%40workspace%3Awebpack":
-  version: 0.0.0-use.local
-  resolution: "awesome-phonenumber@portal:..::locator=%40respond-io%2Fawesome-phoneumber-webpack-test%40workspace%3Awebpack"
-  dependenciesMeta:
-    pre-commit:
-      built: true
-    puppeteer:
-      built: true
-    spawn-sync:
-      built: true
-  languageName: node
-  linkType: soft
 
 "b4a@npm:^1.6.4":
   version: 1.6.7

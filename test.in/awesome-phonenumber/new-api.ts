@@ -8,7 +8,7 @@ import PhoneNumberClass, {
 	getSupportedCallingCodes,
 	getNumberFrom,
 	findNumbers,
-} from 'awesome-phonenumber';
+} from '@respond-io/awesome-phonenumber';
 
 
 
