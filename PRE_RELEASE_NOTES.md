@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.22.1-dev.0](https://github.com/respond-io/awesome-phonenumber/compare/v1.22.0...v1.22.1-dev.0) (2026-11-10)
+
+
+### Miscellaneous Chores
+
+* **release:** release 1.22.1-dev.0 ([fa50438](https://github.com/respond-io/awesome-phonenumber/commit/fa5043857c51af3ecfeb52fc1aa90eaa2efb1c75))
+
 ## [0.3.0](https://github.com/respond-io/awesome-phonenumber/compare/v0.2.0...v0.3.0) (2026-04-30)
 
 
