@@ -11,7 +11,7 @@
 		"target": "es5",
 		"allowSyntheticDefaultImports": true,
 		"paths": {
-			"awesome-phonenumber": [ "." ]
+			"@respond-io/awesome-phonenumber": [ "." ]
 		}
 	},
 	"include": [

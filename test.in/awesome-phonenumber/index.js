@@ -6,7 +6,7 @@ const {
   getRegionCodeForCountryCode,
   getSupportedCallingCodes,
   getSupportedRegionCodes,
-} = require('awesome-phonenumber');
+} = require('@respond-io/awesome-phonenumber');
 
 describe('general', () => {
   it('should be able to parse a phone number', () => {
