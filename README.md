@@ -1,3 +1,6 @@
+> [!WARNING]
+> This repo is no longer maintained. It moved to [respond-io/awesome-phonenumber-v2](https://github.com/respond-io/awesome-phonenumber-v2). Don't open PRs or push changes here. The package name `@respond-io/awesome-phonenumber` stays the same.
+
 [![npm version][npm-image]][npm-url]
 [![downloads][downloads-image]][npm-url]
 [![build status][build-image]][build-url]
