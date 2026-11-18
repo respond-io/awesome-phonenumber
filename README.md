@@ -3,6 +3,7 @@
 [![build status][build-image]][build-url]
 [![minzipped size][bundlephobia-image]][bundlephobia-url]
 [![Dependency count][depcount-image]][npm-url]
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Frespond-io%2Fawesome-phonenumber.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Frespond-io%2Fawesome-phonenumber?ref=badge_shield)
 
 # How to upgrade the version
 
@@ -398,3 +399,7 @@ ayt.addChar('7'); // -> '070 712 34 57'
 [bundlephobia-image]: https://badgen.net/bundlephobia/minzip/awesome-phonenumber
 [bundlephobia-url]: https://bundlephobia.com/package/awesome-phonenumber
 [depcount-image]: https://badgen.net/bundlephobia/dependency-count/awesome-phonenumber
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Frespond-io%2Fawesome-phonenumber.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Frespond-io%2Fawesome-phonenumber?ref=badge_large)
